@@ -20,9 +20,7 @@ ENV/
 .DS_Store
 
 # Model files (optional, comment out if you want to track them)
-# backend/colorization_deploy_v2.prototxt
-# backend/colorization_release_v2.caffemodel
-# backend/pts_in_hull.npy
+backend/colorization_release_v2.caffemodel
 
 # Logs
 *.log
