@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environment
+venv/
+ENV/
+.env/
+.venv/
+
+# MacOS
+.DS_Store
+
+# Model files (optional, comment out if you want to track them)
+# backend/colorization_deploy_v2.prototxt
+# backend/colorization_release_v2.caffemodel
+# backend/pts_in_hull.npy
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# Node.js
+node_modules/
