@@ -1,19 +1,27 @@
 import React from 'react';
 import MetricsDisplay from './MetricsDisplay';
-import { imageStyles, buttonStyles } from '../styles/components';
+import { imageStyles, buttonStyles, imageContainerStyles } from '../styles/components';
 
-const ImageDisplay = ({ originalUrl, colorizedUrl, metrics }) => {
+const ImageDisplay = ({ coloredUrl, grayscaleUrl, colorizedUrl, metrics }) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', marginTop: '30px', flexWrap: 'wrap' }}>
-      {originalUrl && (
+    <div style={imageContainerStyles}>
+      {coloredUrl && (
         <div>
-          <h3>Original Image</h3>
-          <img src={originalUrl} alt="Original" style={imageStyles} />
+          <h3>Original Colored Image</h3>
+          <img src={coloredUrl} alt="Original Colored" style={imageStyles} />
         </div>
       )}
+      
+      {grayscaleUrl && (
+        <div>
+          <h3>Grayscale Image</h3>
+          <img src={grayscaleUrl} alt="Grayscale" style={imageStyles} />
+        </div>
+      )}
+      
       {colorizedUrl && (
         <div>
-          <h3>Colorized Image</h3>
+          <h3>Colorized Result</h3>
           <img src={colorizedUrl} alt="Colorized" style={imageStyles} />
           <br />
           <a 
